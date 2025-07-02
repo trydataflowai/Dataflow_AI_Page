@@ -1,0 +1,466 @@
+{% extends 'base.html' %}
+
+{% block title %}Dataflow AI{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='inicio.css') }}">
+{% endblock %}
+
+{% block content %}
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Transformando <span>Datos</span> en Decisiones Inteligentes</h1>
+                <p>Dataflow AI transforma la forma en que las empresas conectan, procesan y visualizan datos en tiempo real, lo que permite obtener información útil mediante flujos de datos inteligentes.</p>
+                <div class="hero-buttons">
+                    <a href="#pricing" class="btn btn-primary">Ver Planes</a>
+                    <a href="#contact" class="btn btn-outline">Contactar Ventas</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="tech-grid"></div>
+                <div class="data-visualization">
+                    <div class="data-point" style="--size: 0.6; --x: 20%; --y: 30%; --color: #4e54c8;"></div>
+                    <div class="data-point" style="--size: 0.8; --x: 50%; --y: 50%; --color: #8f94fb;"></div>
+                    <div class="data-point" style="--size: 1.2; --x: 70%; --y: 20%; --color: #00d2ff;"></div>
+                    <div class="data-point" style="--size: 0.7; --x: 40%; --y: 70%; --color: #4e54c8;"></div>
+                    <div class="data-point" style="--size: 0.9; --x: 80%; --y: 60%; --color: #8f94fb;"></div>
+                    <div class="connection"></div>
+                    <div class="connection"></div>
+                    <div class="connection"></div>
+                    <div class="connection"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Características <span>Avanzadas</span></h2>
+                <p>Desbloquea el poder de los datos con las características avanzadas de nuestra plataforma.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-network"></i>
+                    </div>
+                    <h3>Dashboards Personalizables</h3>
+                    <p>Personaliza tus análisis con dashboards flexibles e interactivos para satisfacer las necesidades de tu negocio.</p>
+                    <div class="feature-divider"></div>
+                    <div class="feature-highlight">
+                        <strong>Novedad:</strong> Ahora con arrastrar y soltar.
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Integración de Datos</h3>
+                    <p>Conecta y combina datos de múltiples fuentes de manera fluida para obtener una visión holística.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Insights de IA</h3>
+                    <p>Descubre patrones, anomalías y oportunidades ocultas en tus datos con nuestra inteligencia artificial avanzada.</p>
+                    <div class="feature-divider"></div>
+                    <div class="feature-highlight">
+                        <strong>Incluye:</strong> Actualizaciones en tiempo real.
+                    </div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Actualizaciones en Tiempo Real</h3>
+                    <p>Mantente informado con actualizaciones de datos en tiempo real y notificaciones instantáneas.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Automatizaciones Productivas</h3>
+                    <p>Automatiza procesos repetitivos y flujos de trabajo para aumentar la eficiencia de tu equipo.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Seguridad Avanzada</h3>
+                    <p>Protege tus datos con medidas de seguridad de nivel empresarial y cumplimiento normativo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2>Planes para Equipos de <span>Todos los Tamaños</span></h2>
+                <p>Elige el plan adecuado para ti y comienza a organizar tus datos hoy mismo.</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card basic">
+                    <div class="pricing-header">
+                        <div class="pricing-name">Básico</div>
+                        <div class="pricing-price">USD 24,99<span class="pricing-period">/mes</span></div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Dashboard</li>
+                            <li><i class="fas fa-check-circle"></i> Visualización de datos</li>
+                            <li><i class="fas fa-check-circle"></i> Automatizaciones</li>
+                            <li><i class="fas fa-check-circle"></i> Soporte para equipos</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-button">
+                        <a href="#" class="btn btn-outline">Comenzar</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-card pro">
+                    <div class="popular">POPULAR</div>
+                    <div class="pricing-header">
+                        <div class="pricing-name">Profesional</div>
+                        <div class="pricing-price">USD 49,99<span class="pricing-period">/mes</span></div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Dashboard</li>
+                            <li><i class="fas fa-check-circle"></i> Visualización de datos</li>
+                            <li><i class="fas fa-check-circle"></i> Automatizaciones</li>
+                            <li><i class="fas fa-check-circle"></i> Soporte para equipos</li>
+                            <li><i class="fas fa-check-circle"></i> Hasta 5 fuentes de datos</li>
+                            <li><i class="fas fa-check-circle"></i> Alertas personalizadas</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-button">
+                        <a href="#" class="btn btn-primary">Comenzar</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-card enterprise">
+                    <div class="pricing-header">
+                        <div class="pricing-name">Empresa</div>
+                        <div class="pricing-price">Personalizado</div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Dashboard</li>
+                            <li><i class="fas fa-check-circle"></i> Visualización de datos</li>
+                            <li><i class="fas fa-check-circle"></i> Automatizaciones</li>
+                            <li><i class="fas fa-check-circle"></i> Soporte para equipos</li>
+                            <li><i class="fas fa-check-circle"></i> Fuentes de datos ilimitadas</li>
+                            <li><i class="fas fa-check-circle"></i> Integraciones API/SQL</li>
+                            <li><i class="fas fa-check-circle"></i> Branding personalizado</li>
+                            <li><i class="fas fa-check-circle"></i> Soporte técnico dedicado</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-button">
+                        <a href="#" class="btn btn-outline">Contactar Ventas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Plan Section -->
+<!-- Business Plan Section -->
+<section class="business-plan" id="business">
+    <div class="container business-content">
+        <div class="business-text">
+            <h2>Nuestra <span>Solución</span></h2>
+            <p>Dataflow AI ofrece una plataforma inteligente de inteligencia empresarial basada en flujos de datos continuos.</p>
+            
+            <ul class="business-list">
+                <li><i class="fas fa-network-wired"></i> Integramos múltiples flujos de datos a la perfección</li>
+                <li><i class="fas fa-chart-line"></i> Visualizamos relaciones dinámicas e indicadores clave de rendimiento (KPI) en tiempo real</li>
+                <li><i class="fas fa-robot"></i> Utilizamos IA para detectar anomalías, patrones y obtener información práctica al instante</li>
+                <li><i class="fas fa-cogs"></i> Automatizamos la organización, transformación y enriquecimiento de datos sin necesidad de código</li>
+            </ul>
+            
+            <a href="#process" class="btn btn-primary">Conocer el Proceso</a>
+        </div>
+        
+        <div class="business-image">
+            <div class="solution-image-container">
+                <!-- Dashboard interactivo -->
+                <div class="dynamic-dashboard">
+                    <div class="dashboard-header">
+                        <div class="dashboard-title">Panel de Rendimiento</div>
+                        <div class="dashboard-time">Actualizado: <span class="live-time">Ahora</span></div>
+                    </div>
+                    
+                    <div class="dashboard-grid">
+                        <!-- Gráfico principal -->
+                        <div class="main-chart">
+                            <div class="chart-title">Ingresos vs Gastos</div>
+                            <div class="chart-container">
+                                <div class="chart-bars">
+                                    <div class="bar revenue" style="height: 80%"></div>
+                                    <div class="bar expense" style="height: 55%"></div>
+                                    <div class="bar revenue" style="height: 95%"></div>
+                                    <div class="bar expense" style="height: 65%"></div>
+                                    <div class="bar revenue" style="height: 75%"></div>
+                                    <div class="bar expense" style="height: 45%"></div>
+                                </div>
+                                <div class="chart-labels">
+                                    <div>Ene</div>
+                                    <div>Feb</div>
+                                    <div>Mar</div>
+                                    <div>Abr</div>
+                                    <div>May</div>
+                                    <div>Jun</div>
+                                </div>
+                            </div>
+                            <div class="chart-legend">
+                                <div><span class="legend-revenue"></span> Ingresos</div>
+                                <div><span class="legend-expense"></span> Gastos</div>
+                            </div>
+                        </div>
+                        
+                        <!-- KPI Cards -->
+                        <div class="kpi-card">
+                            <div class="kpi-icon"><i class="fas fa-user-plus"></i></div>
+                            <div class="kpi-title">Nuevos Clientes</div>
+                            <div class="kpi-value" data-target="245">0</div>
+                            <div class="kpi-trend up">+12%</div>
+                        </div>
+                        
+                        <div class="kpi-card">
+                            <div class="kpi-icon"><i class="fas fa-shopping-cart"></i></div>
+                            <div class="kpi-title">Ventas</div>
+                            <div class="kpi-value" data-target="12450">0</div>
+                            <div class="kpi-trend up">+8%</div>
+                        </div>
+                        
+                        <div class="kpi-card">
+                            <div class="kpi-icon"><i class="fas fa-percentage"></i></div>
+                            <div class="kpi-title">Conversión</div>
+                            <div class="kpi-value" data-target="4.8">0</div>
+                            <div class="kpi-unit">%</div>
+                            <div class="kpi-trend down">-1.2%</div>
+                        </div>
+                        
+                        <!-- Mapa de calor -->
+                        <div class="heatmap">
+                            <div class="heatmap-title">Actividad por Región</div>
+                            <div class="heatmap-grid">
+                                <div class="heatmap-cell" style="--intensity: 0.2"></div>
+                                <div class="heatmap-cell" style="--intensity: 0.8"></div>
+                                <div class="heatmap-cell" style="--intensity: 0.5"></div>
+                                <div class="heatmap-cell" style="--intensity: 0.9"></div>
+                                <div class="heatmap-cell" style="--intensity: 0.4"></div>
+                                <div class="heatmap-cell" style="--intensity: 0.7"></div>
+                                <div class="heatmap-cell" style="--intensity: 0.3"></div>
+                                <div class="heatmap-cell" style="--intensity: 0.6"></div>
+                                <div class="heatmap-cell" style="--intensity: 0.9"></div>
+                            </div>
+                            <div class="heatmap-labels">
+                                <div>Norte</div>
+                                <div>Centro</div>
+                                <div>Sur</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-footer">
+                        <div class="ai-insight">
+                            <i class="fas fa-lightbulb"></i> 
+                            <span>La IA detecta: Mayor crecimiento en clientes jóvenes (+25%)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Efectos visuales -->
+                <div class="data-streams">
+                    <div class="data-stream"></div>
+                    <div class="data-stream"></div>
+                    <div class="data-stream"></div>
+                </div>
+                <div class="circuit-overlay"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-title">
+                <h2>Programa de <span>Incubación Digital</span></h2>
+                <p>Nuestro proceso para implementar Dataflow AI en tu empresa</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <h3>Kick-Off Estratégico</h3>
+                    <p>Nos reunimos con tu equipo para entender tu operación, fuentes de datos y necesidades clave. Definimos objetivos, stakeholders y posibles quick wins.</p>
+                </div>
+                
+                <div class="step">
+                    <h3>Integración de Datos</h3>
+                    <p>Conectamos las fuentes de datos internas y externas relevantes (Excel, CRM, ERP, etc.), asegurando integridad, limpieza y estructura en tiempo real.</p>
+                </div>
+                
+                <div class="step">
+                    <h3>Diseño de Dashboards</h3>
+                    <p>Construimos visualizaciones personalizadas con alertas, flujos automatizados y métricas clave para monitorear la operación desde el primer día.</p>
+                </div>
+                
+                <div class="step">
+                    <h3>POC Funcional Validada</h3>
+                    <p>Lanzamos una Prueba de Concepto operativa lista para usar. Validamos impacto, recolectamos feedback y preparamos el escalamiento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestro <span>Equipo</span></h2>
+                <p>¡Tenemos un sólido historial de éxito en el crecimiento digital de empresas!</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <div class="avatar" style="background: linear-gradient(135deg, #4e54c8, #8f94fb);"></div>
+                        <div class="tech-border"></div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Daniel Correa</h3>
+                        <p>CEO & Cofounder</p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <div class="avatar" style="background: linear-gradient(135deg, #8f94fb, #00d2ff);"></div>
+                        <div class="tech-border"></div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Julian Herreño</h3>
+                        <p>Data Engineer Lead</p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <div class="avatar" style="background: linear-gradient(135deg, #00d2ff, #4e54c8);"></div>
+                        <div class="tech-border"></div>
+                    </div>
+                    <div class="member-info">
+                        <h3>New</h3>
+                        <p>Analista de Datos</p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <div class="avatar" style="background: linear-gradient(135deg, #8f94fb, #4e54c8);"></div>
+                        <div class="tech-border"></div>
+                    </div>
+                    <div class="member-info">
+                        <h3>New</h3>
+                        <p>Coud Engineer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>¿Dudas? <span>Contáctanos</span></h2>
+                <p>Contáctanos para más información sobre nuestra solución</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <a href="mailto:info@trydataflow.ai">info@trydataflow.ai</a><br>
+                            <a href="mailto:correadaniel@trydataflow.ai">correadaniel@trydataflow.ai</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Teléfono</h3>
+                            <a href="tel:+573024808888">+57 302 4808888</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Oficina Principal</h3>
+                            <p>Bogotá, Colombia</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-map">
+                        <div class="map-overlay"></div>
+                        <div class="location-dot"></div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nombre Completo</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Empresa</label>
+                            <input type="text" id="company" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{ url_for('static', filename='inicio.js') }}"></script>
+{% endblock %}
