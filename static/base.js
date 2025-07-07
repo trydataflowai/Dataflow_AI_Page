@@ -17,19 +17,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Navbar scroll effect
-window.addEventListener('scroll', function() {
+// En tu archivo JavaScript principal (ej. static/js/main.js)
+window.addEventListener('DOMContentLoaded', () => {
     const navbar = document.querySelector('.navbar');
+
+  // Solo aplicar efecto en escritorio
+if (window.innerWidth >= 992) {
+    window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
-        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.3)';
-        navbar.style.padding = '10px 0';
-        navbar.style.backgroundColor = 'rgba(15, 12, 41, 0.98)';
+        navbar.classList.add('scrolled');
     } else {
-        navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
-        navbar.style.padding = '15px 0';
-        navbar.style.backgroundColor = 'rgba(15, 12, 41, 0.9)';
+        navbar.classList.remove('scrolled');
+    }
+    });
+    }
+
+  // Actualizar al cambiar tamaño de ventana
+    window.addEventListener('resize', () => {
+    if (window.innerWidth < 992) {
+        navbar.classList.remove('scrolled');
     }
 });
-
+});
 // Mobile menu toggle
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
