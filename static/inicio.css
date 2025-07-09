@@ -1480,5 +1480,4 @@ textarea.form-control {
 @media (max-width: 1100px) {
     .pricing-grid {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    }
-}
+    }}}}
